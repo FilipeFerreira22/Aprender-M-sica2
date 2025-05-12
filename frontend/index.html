@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizado de Música</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Aprendizado de Música</h1>
+    </header>
+    <main>
+        <section id="teoria-musical">
+            <h2>Teoria Musical</h2>
+            <p>Aprenda os fundamentos da teoria musical de forma interativa.</p>
+        </section>
+        <section id="jogos-educativos">
+            <h2>Jogos Educativos</h2>
+            <p>Reforce seu aprendizado com minigames divertidos.</p>
+        </section>
+        <section id="jogo-leitura-partitura">
+            <h2>Jogo: Leitura de Partitura</h2>
+            <div id="modoJogo">
+                <label for="clave">Escolha a clave:</label>
+                <select id="clave">
+                    <option value="sol">Clave de Sol</option>
+                    <option value="fa">Clave de Fá</option>
+                </select>
+            </div>
+            <canvas id="partituraCanvas" width="600" height="200" style="border:1px solid #000;"></canvas>
+            <div id="controles">
+                <button id="btnNotaC">C</button>
+                <button id="btnNotaD">D</button>
+                <button id="btnNotaE">E</button>
+                <button id="btnNotaF">F</button>
+                <button id="btnNotaG">G</button>
+                <button id="btnNotaA">A</button>
+                <button id="btnNotaB">B</button>
+            </div>
+            <p id="feedback"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Aprendizado de Música</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
